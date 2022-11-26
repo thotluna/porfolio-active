@@ -1,0 +1,60 @@
+---
+
+
+---
+<nav id="nav" class="display-none">
+  <ul>
+    <li><a href="#">Mi Historia</a></li>
+    <li><a href="#">Cursos y Certificaciones</a></li>
+    <li><a href="#">Experiencia Laboral</a></li>
+    <li><a href="#">Desarrollos</a></li>
+  </ul>
+</nav>
+
+<style>
+  .display-none{
+    display: none;
+  }
+  .display-block {
+    display: block;
+  }
+  nav {
+    position: absolute;
+    background-color: var(--color-orange);
+    padding: 1rem;
+    border-radius: 5px;
+    top: 60px;
+    right: 1rem;
+    z-index: 1;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  li {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+    color: var(--color-gray-dark);
+    font-size: 18px;
+  }
+
+  a:hover{
+    color: var(--color-gray-light);
+  }
+
+  @media screen and (min-width: 700px) {
+  nav {
+    display: block !important;
+    position: static; 
+    border-radius: 0;
+    z-index: 0;
+  }
+  ul {
+    flex-direction: row;
+  }
+}
+</style>

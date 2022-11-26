@@ -1,0 +1,101 @@
+---
+import icon from '../images/icon-menu.svg';
+import NavbarItem from './NavbarItem.astro';
+---
+
+<header>
+  <a href="#">
+    <svg class="icon-logo" width="36" height="37" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M16.5365 0.0456009C12.2158 0.424129 8.35709 2.16255 5.29424 5.11367C3.71663 6.63479 2.65067 8.04375 1.73395 9.84527C0.945147 11.3804 0.241616 13.4132 0.0497446 14.7101L0 15.0465H3.33289H6.66577L6.90028 14.3596C8.03019 11.0369 10.759 8.30312 14.1061 7.13248L14.7244 6.92219V10.9458V14.9764H13.3742H12.024V18.236V21.4955H13.3742H14.7244V25.3158C14.7244 27.4188 14.7102 29.1362 14.696 29.1362C14.6746 29.1362 14.3833 29.038 14.0351 28.9189C10.8656 27.8113 8.11547 25.1055 6.99977 21.9792L6.80079 21.4254H3.44659C0.54719 21.4254 0.0852764 21.4394 0.0852764 21.5306C0.0852764 21.5866 0.191872 22.0493 0.326893 22.568C0.909615 24.8041 1.98978 26.9982 3.44659 28.9189C4.10748 29.7881 5.60692 31.3092 6.51654 32.0312C10.5245 35.2207 15.6553 36.6016 20.7151 35.8585L21.2622 35.7814V28.6385V21.4955H22.5769H23.8916V18.236V14.9764H22.5769H21.2622V10.9458C21.2622 8.73071 21.2765 6.91518 21.2907 6.91518C21.312 6.91518 21.6034 7.01332 21.9516 7.13248C22.8043 7.4269 24.0693 8.08581 24.8865 8.65361C25.7393 9.24944 26.9118 10.406 27.5372 11.2612C28.1128 12.0533 28.9087 13.5955 29.1787 14.4367L29.3777 15.0465H32.668C34.4801 15.0465 35.9795 15.0255 35.9937 14.9904C36.0435 14.9133 35.7877 13.7778 35.5389 12.9436C34.6933 10.0836 33.1441 7.49699 30.998 5.36602C28.4823 2.86353 25.4692 1.20922 22.0084 0.424129C20.4877 0.0806503 18.0573 -0.0875854 16.5365 0.0456009Z" fill="#232225"/>
+      </svg>
+
+
+  </a>
+  <NavbarItem />
+  <button id="toggle-nav" class="button-icon">
+    <svg width="28" height="18" viewBox="0 0 28 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path class="path-icon" d="M0.5 18V15H27.5V18H0.5ZM0.5 10.5V7.5H27.5V10.5H0.5ZM0.5 3V0H27.5V3H0.5Z" 
+        fill="#232225"/>
+    </svg>
+
+  </button>
+</header>
+
+<style>
+  header{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 1rem;
+    padding-block: .5rem;
+    background-color: var(--color-gray-dark);
+  }
+
+  .button-icon {
+    display: block;
+    padding: 1rem;
+    border: 0;
+    background-color: var(--color-gray-dark);
+  }
+
+  .icon-logo > path{
+    fill: var(--color-gray-dark);
+  }
+
+  .path{
+    fill: var(--color-orange);
+  }
+
+  @media (prefers-color-scheme:dark){
+    header{
+      background-color: var(--color-orange);
+    }
+
+    .button-icon {
+      background-color: var(--color-orange);
+    }
+
+    .icon-logo > path {
+      fill: var(--color-gray-dark);
+    }
+  }
+
+  @media screen and (min-width: 700px) {
+    .button-icon {
+      display: none;
+    }
+    .icon-logo{
+      width: 48px;
+      height: 48px;
+    }
+  } 
+  
+ 
+</style>
+
+<script>
+  const button = document.querySelector("#toggle-nav")
+  const nav = document.querySelector("nav")  
+
+  button?.addEventListener('click', () => {
+    
+    
+    
+    if(nav != undefined) {
+      
+      if(nav.classList.contains('display-none')){
+        nav.classList.remove('display-none')
+        nav.classList.add('display-block')
+
+        button.addEventListener('blur', (_) => {
+          nav.classList.add('display-none')
+          nav.classList.remove('display-block')
+        });
+      }else{ 
+        nav.classList.add('display-none')
+          nav.classList.remove('display-block')
+      }
+    }
+  })
+</script>
