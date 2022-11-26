@@ -4,15 +4,12 @@ import NavbarItem from './NavbarItem.astro';
 ---
 
 <header>
-  <a href="#">
-    <svg class="icon-logo" xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#E35C10" viewBox="0 0 36 36">
-      <path d="M18,0A18.18,18.18,0,0,0,0,15H6.68A11.69,11.69,0,0,1,14.73,6.9V15H12v6.44h2.7v7.7a11.67,11.67,0,0,1-7.93-7.7H.08A18.19,18.19,0,0,0,18,36a18.5,18.5,0,0,0,3.27-.29V21.43H23.9V15H21.27V6.89A11.65,11.65,0,0,1,29.35,15H36A18.18,18.18,0,0,0,18,0Z"/>
-    </svg>
+  <svg class="icon-logo" xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#E35C10" viewBox="0 0 36 36">
+    <path d="M18,0A18.18,18.18,0,0,0,0,15H6.68A11.69,11.69,0,0,1,14.73,6.9V15H12v6.44h2.7v7.7a11.67,11.67,0,0,1-7.93-7.7H.08A18.19,18.19,0,0,0,18,36a18.5,18.5,0,0,0,3.27-.29V21.43H23.9V15H21.27V6.89A11.65,11.65,0,0,1,29.35,15H36A18.18,18.18,0,0,0,18,0Z"/>
+  </svg>
 
-
-  </a>
   <NavbarItem />
-  <button id="toggle-nav" class="button-icon">
+  <button data-message="Toggle menu" id="toggle-nav" class="button-icon">
     <svg width="28" height="18" viewBox="0 0 28 18" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path class="path-icon" d="M0.5 18V15H27.5V18H0.5ZM0.5 10.5V7.5H27.5V10.5H0.5ZM0.5 3V0H27.5V3H0.5Z" 
         fill="#232225"/>
