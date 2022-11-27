@@ -1,0 +1,30 @@
+---
+import Avatar from "./Avatar.astro";
+import MiData from "./MiData.astro";
+
+---
+
+<section class="me">
+  <Avatar />
+  <MiData />
+</section>
+
+<style>
+  .me {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 2rem 0;
+  }
+
+  @media screen and (min-width: 600px) {
+    .me {
+      gap: 3.1rem;
+      padding: 8rem 0;
+    }
+  } 
+
+  
+</style>
