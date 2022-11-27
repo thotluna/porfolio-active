@@ -1,0 +1,15 @@
+---
+import sm from '../../images/mesm.png'
+import lg from '../../images/me2x.png'
+---
+
+<picture >
+  <source srcset={lg} media="(min-width: 600px)" />
+  <img class="avatar"  src={sm} alt="me" />
+</picture>
+
+<style>
+  .avatar {
+    border-radius: 100%;
+  }
+</style>
