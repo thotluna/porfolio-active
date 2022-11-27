@@ -6,7 +6,7 @@ import SocialIcons from "./SocialIcons.astro";
 
 <article class="my-data">
   <span class="greeting">Hola, soy</span>
-  <h1>Eladio Feijóo</h1>
+  <h1 class="text-gradient">Eladio Feijóo</h1>
   <span class="craft">Desarrollador Web</span>
   <SocialIcons />
   <Button>Descargue el currículo</Button>
@@ -31,6 +31,14 @@ import SocialIcons from "./SocialIcons.astro";
     font-size: var(--font-size-1);
     font-weight: 700;
   }
+
+  .text-gradient {
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+	}
 
   @media screen and (min-width: 600px) {
     .my-data h1{
