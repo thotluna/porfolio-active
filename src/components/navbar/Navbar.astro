@@ -9,10 +9,9 @@ import NavbarItem from './NavbarItem.astro';
   </svg>
 
   <NavbarItem />
-  <button data-message="Toggle menu" id="toggle-nav" class="button-icon">
-    <svg width="28" height="18" viewBox="0 0 28 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path class="path-icon" d="M0.5 18V15H27.5V18H0.5ZM0.5 10.5V7.5H27.5V10.5H0.5ZM0.5 3V0H27.5V3H0.5Z" 
-        fill="#232225"/>
+  <button aria-label="Toggle menu" id="toggle-nav" class="button-icon">
+    <svg class="icon-logo" width="28" height="18" viewBox="0 0 28 18" fill="#232225" xmlns="http://www.w3.org/2000/svg">
+      <path class="path-icon" d="M0.5 18V15H27.5V18H0.5ZM0.5 10.5V7.5H27.5V10.5H0.5ZM0.5 3V0H27.5V3H0.5Z"/>
     </svg>
 
   </button>
@@ -37,7 +36,7 @@ import NavbarItem from './NavbarItem.astro';
   }
 
   .icon-logo > path{
-    fill: var(--color-gray-dark);
+    fill: var(--color-orange);
   }
 
   .path{
