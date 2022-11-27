@@ -1,22 +1,26 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Navbar from '../components/Navbar.astro';
+import Navbar from '../components/navbar/Navbar.astro';
+import Me from '../components/me/Me.astro';
 ---
 
 <Layout title="Porfolio Eladio Feijóo.">
 	<Navbar />
-	<main>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
-		
-		
-	</main>
+		<main>
+			<Me />
+		</main>
 </Layout>
 
 <style>
+	
 	main {
 		margin: auto;
 		padding: 1.5rem;
-		max-width: 60ch;
+		max-width: 900px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 	}
 	.text-gradient {
 		background-image: var(--accent-gradient);
