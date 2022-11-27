@@ -1,0 +1,24 @@
+---
+import Section from "../../layouts/Section.astro"
+import Subtitle from "../Subtitle.astro";
+import WorkItem from "./WorkItem.astro";
+
+---
+
+<Section id="WorkExperience">
+  <Subtitle>Experiencia Laboral</Subtitle>
+  <div >
+    <WorkItem
+      cargo="Ingeniero de Campo"
+      empresa="Electomontajes OTER, SRL"
+      date="2014 - Actual"
+      personal="Variado"
+      reponsabilidades={[
+        "Planificación Plan Maestro Anual de Mantenimiento de los Clientes",
+        "Previsión anual de Stock de Mantenimiento",
+        "Desarrollo de soluciones de sistemas de bombeo e Hidroneumática para clientes",
+        "Venta, instalación y mantenimiento de sistemas de bombeo e Hidroneumática para clientes"
+      ]}
+    />
+  </div>
+</Section>

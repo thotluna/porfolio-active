@@ -1,0 +1,55 @@
+---
+import SpacerVertical from "../SpacerVertical.astro"
+
+export interface Props {
+  cargo: string,
+  empresa: string,
+  date: string,
+  personal: string,
+  reponsabilidades?: string[]
+}
+
+const {cargo, empresa, date, personal, reponsabilidades} = Astro.props
+
+---
+
+<article class="article">
+  <h3>{cargo}</h3>
+  <SpacerVertical size={4}/>
+  <div>
+    <p>{empresa}</p>
+    <p>{date}</p>
+  </div>
+  <p>Personal a cargo: {personal}</p>
+  <SpacerVertical size={4}/>
+  {
+    reponsabilidades && <h4>Responsabilidades</h4>
+    <ul>
+      {reponsabilidades.map((element) => <li>{element}</li>)
+      }
+    </ul>
+  }
+  
+
+</article>
+
+<style>
+  .article {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .5rem;
+  }
+  .article div{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .article ul{
+    padding-left: 2rem;
+    text-align: left;
+  }
+</style>
