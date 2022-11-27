@@ -1,0 +1,38 @@
+---
+import GithubIcon from "../icons/GithubIcon.astro";
+import LinkedinIcon from "../icons/LinkedinIcon.astro";
+import TwitterIcon from "../icons/TwitterIcon.astro";
+---
+
+<ul class="social-icons">
+  <li>
+    <a href="https://github.com/thotluna" aria-label="Visita mis repositorios en Github" target="_blank">
+      <GithubIcon />
+    </a>
+  </li>
+  <li>
+    <a href="https://www.linkedin.com/in/eladio-feijoo/" aria-label="Visita mi perfil en Linkedin" target="_blank">
+      <LinkedinIcon />
+    </a>
+  </li>
+  <li>
+    <a href="https://twitter.com/Eladiofeijoo" aria-label="Visita mi timeline en Twitter" target="_blank">
+      <TwitterIcon />
+    </a>
+  </li>
+</ul>
+
+<style>
+  .social-icons {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    list-style: none;
+    gap: 16px;
+    padding: 8px 0;
+  } 
+  
+</style>
