@@ -1,0 +1,56 @@
+
+<button class="button">
+  <slot />
+</button>
+
+<style>
+.button {
+  margin: 0;
+  padding: .7rem 1.5rem;
+  border: 2px solid var(--color-gray-dark);
+  border-radius: 8px;
+  background-color: transparent;
+  color: var(--color-gray-dark);
+}
+
+.button:hover {
+  background-color:var(--color-gray-dark);
+  color: var(--color-orange);
+}
+
+.button:active {
+  background-color: transparent;
+  color: var(--color-gray-dark);
+}
+
+@media (prefers-color-scheme:dark){
+    .button {
+      border-color: var(--color-orange);
+      background-color: transparent;
+      color: var(--color-orange);
+    }
+
+    .button:hover {
+      background-color: var(--color-orange);
+      color: var(--color-gray-dark);
+    }
+    .button:active {
+      background-color: transparent;
+      color: var(--color-orange);
+    }
+  }
+  @media screen and (min-width: 600px) {
+    .button {
+      padding: 1rem 3rem;
+      font-size: var(--font-size-4);
+    }
+
+    button:hover {
+      background-color: #dd6c2a;
+    }
+
+    /* button:active {
+      background-color: #ce550f;
+    } */
+  } 
+</style>
