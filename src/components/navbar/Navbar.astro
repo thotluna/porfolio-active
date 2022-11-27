@@ -25,35 +25,35 @@ import NavbarItem from './NavbarItem.astro';
     justify-content: space-between;
     padding-inline: 1rem;
     padding-block: .5rem;
-    background-color: var(--color-gray-dark);
+    background-color: var(--light-accent);
   }
 
   .button-icon {
     display: block;
     padding: 1rem;
     border: 0;
-    background-color: var(--color-gray-dark);
+    background-color: var(--light-accent);
   }
 
   .icon-logo > path{
-    fill: var(--color-orange);
+    fill: var(--light-bg-color);
   }
 
   .path{
-    fill: var(--color-orange);
+    fill: var(--light-bg-color);
   }
 
   @media (prefers-color-scheme:dark){
     header{
-      background-color: var(--color-orange);
+      background-color: var(--dark-accent);
     }
 
     .button-icon {
-      background-color: var(--color-orange);
+      background-color: var(--dark-accent);
     }
 
     .icon-logo > path {
-      fill: var(--color-gray-dark);
+      fill: var(--dark-bg-color);
     }
   }
 

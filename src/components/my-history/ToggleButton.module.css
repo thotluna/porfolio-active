@@ -9,7 +9,7 @@
   padding: 0;
   border: 0;
   background-color: transparent;
-  color: var(--color-gray);
+  color: var(--light-font-paragraph);
   font-size: 1rem;
   margin-bottom: 1rem;
 }

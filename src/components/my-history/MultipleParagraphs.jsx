@@ -7,7 +7,7 @@ export default function MultipleParagraph() {
 
   return !$isCollapseParagraph && <article className={styles.historyParagraphs}>
     <p>
-      Desde pequeño, mi padre me llevaba a su trabajo, aunque no entendía nada, igual quedaba hipnotizado por toda la tecnología. A los 14 años empece a trabajar en la empresa de mi padre como un simple obrero, y hay entendí que lo que me atraía de la tecnología era la posibilidad de crear nuevas cosas.
+      Desde pequeño, mi padre me llevaba a su trabajo, aunque no entendía nada, igual quedaba hipnotizado por toda la tecnología. A los 14 años empece a trabajar en la empresa de mi padre como un simple obrero, y ahí entendí que lo que me atraía de la tecnología era la posibilidad de crear nuevas cosas.
     </p>
     <p>
       A los 18 años, empece a trabajar en una empresa en el sector de  telecomunicaciones. Hay aprendí la necesidad de trabajar en equipo, la ética profesional, el respeto a los clientes y el tiempo prometido de cada proyecto. Fue el periodo donde me forme profesionalmente. En esta área entendí que no solo me llenaba la idea de “Crear” sistema que satisficieran las necesidades de los clientes, sino que también, me llenaba de orgullo los momentos en que lograba “Resolver” problemas que parecían imposibles.

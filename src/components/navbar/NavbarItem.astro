@@ -20,7 +20,7 @@
   }
   nav {
     position: absolute;
-    background-color: var(--color-gray-dark);
+    background-color: var(--light-accent);
     padding: 1rem;
     border-radius: 5px;
     top: 70px;
@@ -38,14 +38,14 @@
   }
   a {
     text-decoration: none;
-    color: var(--color-orange);
+    color: var(--dark-bg-color);
     font-size: 18px;
     
   }
 
   a:hover{
-    color: var(--color-gray-light);
-    background-color: var(--color-orange);
+    color: var(--light-font-paragraph);
+    background-color: var(--light-accent);
     border-radius: 4px;
     
   }
@@ -65,22 +65,29 @@
   }
 
   a {
-    color: var(--color-orange);
+    color: var(--dark-accent);
     padding: 8px;
     transition: color .7s, background-color .7s;
+  }
+
+  a:hover{
+    color: var(--light-font-paragraph);
+    background-color: var(--light-bg-color);
+    border-radius: 4px;
+    
   }
 }
 
 @media (prefers-color-scheme:dark){
   nav {
-    background-color: var(--color-orange);
+    background-color: var(--dark-accent);
   }
   a {
-    color: var(--color-gray-dark);
+    color: var(--dark-bg-color);
   }
   a:hover{
-    color: var(--color-gray-light);
-    background-color: var(--color-gray-dark);
+    color: var(--dark-accent);
+    background-color: var(--dark-bg-color);
     border-radius: 4px;
     
   }
