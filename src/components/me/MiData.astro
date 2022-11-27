@@ -1,0 +1,51 @@
+---
+import Button from "../Button.astro";
+import SocialIcons from "./SocialIcons.astro";
+---
+
+
+<article class="my-data">
+  <span class="greeting">Hola, soy</span>
+  <h1>Eladio Feijóo</h1>
+  <span class="craft">Desarrollador Web</span>
+  <SocialIcons />
+  <Button>Descargue el currículo</Button>
+</article>
+
+<style>
+  .my-data {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .my-data h1{
+    font-size: var(--font-size-5);
+  }
+  .greeting {
+    font-size: var(--font-size-2);
+  }
+  .craft {
+    font-size: var(--font-size-1);
+    font-weight: 700;
+  }
+
+  @media screen and (min-width: 600px) {
+    .my-data h1{
+    font-size: var(--font-size-6);
+    }
+    .greeting {
+      font-size: var(--font-size-4);
+    }
+    .craft {
+      font-size: var(--font-size-3);
+    }
+  } 
+
+
+
+
+</style>
+
