@@ -1,0 +1,11 @@
+.historyParagraphs {
+  column-count:2;
+  column-gap: 3em;
+  column-width: 140px;
+}
+
+.historyParagraphs p{
+  text-align: left;
+  text-indent: 2rem;
+  margin-bottom: 1rem;
+}

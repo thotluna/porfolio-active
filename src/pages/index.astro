@@ -2,12 +2,14 @@
 import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/navbar/Navbar.astro';
 import Me from '../components/me/Me.astro';
+import MyHistory from '../components/my-history/MyHistory.astro';
 ---
 
 <Layout title="Porfolio Eladio Feijóo.">
 	<Navbar />
 		<main>
 			<Me />
+			<MyHistory collapse={false} />
 		</main>
 </Layout>
 

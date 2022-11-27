@@ -1,0 +1,28 @@
+---
+import Subtitle from "../Subtitle.astro"
+import AParagraph from "./AParagraph.jsx"
+import MultipleParagraphs from "./MultipleParagraphs.jsx";
+import ToggleButton from "./ToggleButton";
+
+
+
+---
+
+
+<section id="my-history" class="my-history">
+  <Subtitle>
+    Mi Historia
+  </Subtitle>
+  <AParagraph client:load />
+  <ToggleButton client:load />
+  <MultipleParagraphs client:load />
+  
+</section>
+
+<style>
+  .my-history {
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+</style>

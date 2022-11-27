@@ -1,0 +1,15 @@
+.spanMyHistory{
+  display: block;
+  width: 100%;
+  text-align: end;
+}
+
+.spanMyHistory button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  color: var(--color-gray);
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
